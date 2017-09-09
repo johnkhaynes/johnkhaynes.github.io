@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Welcome to My New Blog!"
 date:   2017-09-08 10:28:02 -0700
 categories: blog update
