@@ -13,7 +13,12 @@ This my personal health dashboard that helps me track several bits of important 
 
 See the [Weight][weight] Google Sheet for all the raw data and additional plots.
 
+## Caffeine Intake
+
+
 ## Sleep
+
+
 
 
 [weight]: https://docs.google.com/spreadsheets/d/1pvA4s9ndMk6wJsfofGTv4tOLMhxXxQ1mjpTlHRDKWZI/edit?usp=sharing
