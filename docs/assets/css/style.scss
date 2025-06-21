@@ -212,8 +212,107 @@ a:hover {
     color: var(--accent-green);
 }
 
-/* Navigation */
-nav, .navigation {
+/* Posts list page */
+.posts-list {
+    margin-top: 2rem;
+}
+
+.post-item {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.post-item:last-child {
+    border-bottom: none;
+}
+
+.post-item h2 {
+    margin-bottom: 0.5rem;
+}
+
+.post-item h2 a {
+    color: var(--accent-blue) !important;
+    text-decoration: none !important;
+    border: none !important;
+}
+
+.post-item h2 a:hover {
+    color: var(--accent-green) !important;
+    text-shadow: 0 0 8px var(--glow-green) !important;
+}
+
+.post-item .post-meta {
+    margin-bottom: 1rem !important;
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+}
+
+.post-excerpt {
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+/* Post categories */
+.post-categories {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    text-align: left;
+}
+
+.post-categories::before {
+    content: ">> ";
+    color: var(--accent-green);
+    font-weight: bold;
+}
+
+.category {
+    display: inline-block;
+    background: rgba(0, 255, 65, 0.1);
+    color: var(--accent-green);
+    padding: 0.3rem 0.8rem;
+    margin-right: 0.5rem;
+    border: 1px solid rgba(116, 221, 126, 0.3);
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* Site navigation in footer */
+.site-nav {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(116, 221, 126, 0.2);
+}
+
+.site-nav a {
+    color: var(--text-secondary) !important;
+    text-decoration: none !important;
+    border: none !important;
+    margin-right: 2rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.site-nav a::before {
+    content: ">> ";
+    color: var(--accent-green);
+    font-weight: bold;
+}
+
+.site-nav a:hover {
+    color: var(--accent-green) !important;
+    text-shadow: none !important;
+}
+
+/* Navigation (excluding site nav in header) */
+nav:not(.site-nav), .navigation {
     background: var(--bg-secondary) !important;
     border: 1px solid var(--border-color) !important;
     border-radius: 8px !important;
