@@ -1,0 +1,303 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Orbitron:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Workbench:wght@400;700;900&display=swap');
+
+/* Enhanced Hacker Theme Overrides */
+:root {
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #242424;
+    --text-primary: #e8e8e8;
+    --text-secondary: #b8b8b8;
+    --accent-green: #74dd7e;
+    --accent-blue: #35b19a;
+    --accent-purple: #bb86fc;
+    --accent-red: #491b21;
+    --border-color: #404040;
+    --glow-green: rgba(0, 255, 65, 0.3);
+    --glow-blue: rgba(0, 255, 149, 0.3);
+}
+
+/* Override body and background */
+body {
+    font-family: 'IBM Plex Mono', monospace !important;
+    background: var(--bg-primary) !important;
+    color: var(--text-primary) !important;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Matrix-style background effect */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 20% 80%, rgba(0, 255, 65, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(0, 212, 255, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(187, 134, 252, 0.02) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Override container/wrapper */
+.container, .wrapper {
+    background: var(--bg-secondary) !important;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+/* Enhanced headers */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Workbench', monospace !important;
+    color: var(--accent-blue) !important;
+    text-shadow: 0 0 10px var(--glow-blue);
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-family: 'Workbench', monospace !important;
+    font-size: 3rem;
+    font-weight: 900;
+    background: linear-gradient(45deg, var(--accent-green), var(--accent-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 20px var(--glow-blue);
+    letter-spacing: 2px;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--accent-purple) !important;
+    text-shadow: 0 0 8px rgba(187, 134, 252, 0.5);
+}
+
+h4 {
+    font-size: 1.2rem;
+    color: var(--accent-green) !important;
+}
+
+/* Site title and description */
+.site-title, header h1 {
+    font-family: 'Workbench', monospace !important;
+    font-size: 3rem !important;
+    font-weight: 900 !important;
+    background: linear-gradient(45deg, var(--accent-green), var(--accent-blue)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    text-shadow: 0 0 20px var(--glow-green) !important;
+    letter-spacing: 3px !important;
+    text-align: left !important;
+    margin-bottom: 0.5rem !important;
+    margin-left: 0.5rem !important;
+}
+
+.site-description, header p {
+    font-size: 3rem !important;
+    text-align: center !important;
+    color: var(--text-secondary) !important;
+    font-weight: 300 !important;
+    letter-spacing: 1px !important;
+    font-style: italic;
+}
+
+/* Enhanced paragraphs and text */
+p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-primary);
+}
+
+/* Terminal-style quotes */
+blockquote {
+    background: rgba(0, 255, 65, 0.05) !important;
+    border-left: 4px solid var(--accent-green) !important;
+    padding: 1rem 1.5rem !important;
+    margin: 2rem 0 !important;
+    font-style: italic !important;
+    position: relative;
+    color: var(--text-primary) !important;
+}
+
+blockquote::before {
+    content: "$ ";
+    color: var(--accent-green);
+    font-weight: bold;
+}
+
+/* Code blocks */
+pre, code {
+    font-family: 'IBM Plex Mono', monospace !important;
+    background: rgba(0, 0, 0, 0.5) !important;
+    border: 1px solid var(--border-color) !important;
+}
+
+code {
+    padding: 0.2rem 0.4rem !important;
+    border-radius: 3px !important;
+    color: var(--accent-green) !important;
+}
+
+pre {
+    padding: 1rem !important;
+    border-radius: 5px !important;
+    overflow-x: auto;
+    margin: 1rem 0 !important;
+}
+
+/* Enhanced links */
+a {
+    color: var(--accent-blue) !important;
+    text-decoration: none !important;
+    border-bottom: 1px dotted var(--accent-blue) !important;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent-green) !important;
+    border-bottom-color: var(--accent-green) !important;
+    text-shadow: 0 0 8px var(--glow-green) !important;
+}
+
+/* Post metadata */
+.post-meta, .meta {
+    color: var(--text-secondary) !important;
+    font-size: 0.9rem !important;
+    margin-bottom: 2rem !important;
+    border-bottom: 1px solid var(--border-color) !important;
+    padding-bottom: 1rem !important;
+}
+
+.post-meta::before, .meta::before {
+    content: ">> ";
+    color: var(--accent-green);
+}
+
+/* Navigation */
+nav, .navigation {
+    background: var(--bg-secondary) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 8px !important;
+    padding: 1rem !important;
+    margin-bottom: 2rem !important;
+}
+
+nav a, .navigation a {
+    color: var(--accent-green) !important;
+    margin-right: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* Terminal cursor effect */
+.cursor::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 1.2em;
+    background: var(--accent-green);
+    animation: blink 1s infinite;
+    margin-left: 2px;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+/* Lists */
+ul, ol {
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 2rem 0;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+}
+
+th, td {
+    border: 1px solid var(--border-color);
+    padding: 0.75rem;
+    text-align: left;
+    color: var(--text-primary);
+}
+
+th {
+    background: rgba(0, 255, 65, 0.1);
+    color: var(--accent-green);
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    background: var(--bg-secondary) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 8px !important;
+    padding: 2rem !important;
+    margin-top: 2rem !important;
+    text-align: center;
+    color: var(--text-secondary) !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container, .wrapper {
+        padding: 1rem;
+        margin: 1rem;
+    }
+    
+    h1, .site-title {
+        font-size: 2rem !important;
+    }
+    
+    h2 {
+        font-size: 1.5rem !important;
+    }
+}
+
+/* Subtle fade-in animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header h1:before { content: ">"; font-size: 48px; }
