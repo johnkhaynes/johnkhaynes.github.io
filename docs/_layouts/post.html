@@ -10,7 +10,7 @@ layout: default
   {% if page.categories.size > 0 %}
   <div class="post-categories">
     {% for category in page.categories %}
-      <span class="category">{{ category }}</span>
+      <a href="{{ '/category/' | append: category | relative_url }}" class="category">{{ category }}</a>
     {% endfor %}
   </div>
   {% endif %}

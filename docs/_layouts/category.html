@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<h1>Posts in {{ page.category | capitalize }}</h1>
+
+<div class="posts-list">
+  {% for post in site.categories[page.category] %}
+    <article class="post-item">
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      {% if post.categories.size > 0 %}
+      <div class="post-categories">
+        {% for category in post.categories %}
+          <a href="{{ '/category/' | append: category | relative_url }}" class="category">{{ category }}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
+      <p class="post-meta">{{ post.date | date_to_string }}</p>
+      <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+    </article>
+  {% endfor %}
+</div>
+
+<p><a href="{{ '/posts' | relative_url }}">&larr; Back to All Posts</a></p>

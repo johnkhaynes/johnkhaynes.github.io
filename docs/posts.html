@@ -4,14 +4,38 @@ title: Posts
 permalink: /posts/
 ---
 
-<h1>All Posts</h1>
+<div class="home-layout">
+  <div class="main-content">
+    <h1>All Posts</h1>
 
-<div class="posts-list">
-  {% for post in site.posts %}
-    <article class="post-item">
-      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-      <p class="post-meta">{{ post.date | date_to_string }}</p>
-      <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-    </article>
-  {% endfor %}
+    <div class="posts-list">
+      {% for post in site.posts %}
+        <article class="post-item">
+          <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+          {% if post.categories.size > 0 %}
+          <div class="post-categories">
+            {% for category in post.categories %}
+              <a href="{{ '/category/' | append: category | relative_url }}" class="category">{{ category }}</a>
+            {% endfor %}
+          </div>
+          {% endif %}
+          <p class="post-meta">{{ post.date | date_to_string }}</p>
+          <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <h3>Categories</h3>
+    <div class="tag-cloud">
+      {% assign categories = site.categories | sort %}
+      {% for category in categories %}
+        {% assign post_count = category[1] | size %}
+        <a href="{{ '/category/' | append: category[0] | relative_url }}" class="tag tag-{{ post_count }}">
+          {{ category[0] }} ({{ post_count }})
+        </a>
+      {% endfor %}
+    </div>
+  </div>
 </div>

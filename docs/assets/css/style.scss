@@ -267,10 +267,22 @@ a:hover {
     font-weight: bold;
 }
 
+/* Remove '>>' from categories on posts summary page */
+.posts-list .post-categories::before {
+    content: "";
+}
+
+/* Remove horizontal rule and spacing from categories on posts summary page */
+.posts-list .post-categories {
+    margin-top: 0.5rem;
+    padding-top: 0;
+    border-top: none;
+}
+
 .category {
     display: inline-block;
     background: rgba(0, 255, 65, 0.1);
-    color: var(--accent-green);
+    color: var(--accent-green) !important;
     padding: 0.3rem 0.8rem;
     margin-right: 0.5rem;
     border: 1px solid rgba(116, 221, 126, 0.3);
@@ -279,6 +291,82 @@ a:hover {
     font-weight: 500;
     letter-spacing: 0.5px;
     text-transform: uppercase;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+}
+
+.category:hover {
+    background: rgba(0, 255, 65, 0.2);
+    border-color: var(--accent-green);
+    text-shadow: 0 0 5px var(--glow-green);
+}
+
+/* Home page two-column layout */
+.home-layout {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.sidebar {
+    width: 18%;
+    min-width: 150px;
+}
+
+.sidebar h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--accent-blue) !important;
+}
+
+/* Tag cloud */
+.tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    display: inline-block;
+    background: rgba(0, 255, 65, 0.1);
+    color: var(--accent-green) !important;
+    padding: 0.25rem 0.6rem;
+    border: 1px solid rgba(116, 221, 126, 0.3);
+    border-radius: 3px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+}
+
+.tag:hover {
+    background: rgba(0, 255, 65, 0.2);
+    border-color: var(--accent-green);
+    text-shadow: 0 0 5px var(--glow-green);
+}
+
+/* Tag sizes based on post count */
+.tag-1 { font-size: 0.7rem; }
+.tag-2 { font-size: 0.75rem; }
+.tag-3, .tag-4 { font-size: 0.8rem; }
+.tag-5, .tag-6, .tag-7, .tag-8, .tag-9, .tag-10 { font-size: 0.85rem; }
+
+/* Responsive design for home layout */
+@media (max-width: 768px) {
+    .home-layout {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        margin-top: 2rem;
+    }
 }
 
 /* Site navigation in footer */
