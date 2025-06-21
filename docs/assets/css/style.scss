@@ -58,6 +58,23 @@ body::before {
     max-width: 800px;
 }
 
+/* Main content margins */
+#main_content.inner {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 40px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Post content margins */
+.post-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
 /* Enhanced headers */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Workbench', monospace !important;
@@ -97,9 +114,9 @@ h4 {
 }
 
 /* Site title and description */
-.site-title, header h1 {
+.site-title, header h1, #project_title {
     font-family: 'Workbench', monospace !important;
-    font-size: 3rem !important;
+    font-size: 2.5rem !important;
     font-weight: 900 !important;
     background: linear-gradient(45deg, var(--accent-green), var(--accent-blue)) !important;
     -webkit-background-clip: text !important;
@@ -109,16 +126,17 @@ h4 {
     letter-spacing: 3px !important;
     text-align: left !important;
     margin-bottom: 0.5rem !important;
-    margin-left: 0.5rem !important;
+    margin-left: 40px !important;
 }
 
-.site-description, header p {
-    font-size: 3rem !important;
-    text-align: center !important;
-    color: var(--text-secondary) !important;
+.site-description, header p, #project_tagline {
+    font-size: 1.5rem !important;
+    text-align: left !important;
+    color: var(--accent-green) !important;
     font-weight: 300 !important;
     letter-spacing: 1px !important;
-    font-style: italic;
+    font-style: bold;
+    margin-left: 40px !important;
 }
 
 /* Enhanced paragraphs and text */
@@ -261,9 +279,9 @@ th {
 
 /* Footer */
 footer {
-    background: var(--bg-secondary) !important;
-    border: 1px solid var(--border-color) !important;
-    border-radius: 8px !important;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
     padding: 2rem !important;
     margin-top: 2rem !important;
     text-align: center;
@@ -300,4 +318,4 @@ footer {
     }
 }
 
-header h1:before { content: ">"; font-size: 48px; }
+header h1:before { content: ">"; font-size: 2.5rem; }
