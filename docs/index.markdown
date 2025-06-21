@@ -7,7 +7,7 @@ title: Home
   <div class="main-content">
     <h1>Digital Postcards from the Edge</h1>
 
-    <p>Welcome to my little corner of the web. As we approach the coming collective transformation (aka the singularity) I felt it appropriate to record some of my thoughts, feelings, and observations.</p>
+    <p>Welcome to my little corner of the web. As we approach the coming collective transformation (aka The Singularity), it feels appropriate to record some of my thoughts, feelings, and observations as all of this unfolds.</p>
 
     <p>Here's a few of the latest:</p>
 
@@ -23,9 +23,9 @@ title: Home
 
     <h2>About Me</h2>
 
-    <p>I am a long-time software engineer (30+ year career in tech), recently turned full-time musician, composer, and music teacher. In college I studied Liberal Arts - not engineering - and I learned my tech skills the old-fashioned way: on the job. I have a penchant for philosophy, systems thinking, and wrestling with the 'big questions.' I'm particularly interested in how tecnhology steers us toward deeper engagement with these questions rather than seeing it as a purported answer to them.</p>
+    <p>I am a long-time software engineer (30+ year career in tech), recently turned full-time musician, composer, and music teacher. In college I studied Liberal Arts - not engineering - and I learned my tech skills the old-fashioned way: on the job. I have a penchant for philosophy, systems thinking, seeing the big picture, and wrestling with the 'big questions.' I'm particularly interested in how tecnhology steers us toward deeper engagement with these questions rather than seeing it as a purported answer to them.</p>
 
-    <p>I never dreamed that all of the seeming unrelated currents in my life would somehow come full circle and combine this way in the present moment, but he we are. This blog is my attempt to capture and describe some of these connections and insights as they unfold. My hope is to spark conversation and curiousity as we approach this inflection point. This historical moment presents profound questions to all of us as we live through a period of radical and unprecendented change. Many of these questions are barely acknowledged and little discussed, and engaging with them in a deep way seems to be even rarer. In our headlong rush into the future, I feel strongly that we need to take the time to reflect and allow ourselves to be transformed by these questions, just as humans have always done throughout known history.</p>
+    <p>I never dreamed that all of the seeming unrelated currents in my life would somehow come full circle and combine this way in the present moment, but here we are. This blog is my attempt to capture and describe some of these connections and insights as they unfold, and as I do my best to grapple with and make sense of them. My hope is to spark both curiousity and conversation as we approach this inflection point. This historical moment presents profound questions to all of us as we live through a period of radical and unprecendented change. Many of these questions are barely acknowledged and little discussed, and engaging with them in a deep way seems to be even rarer. In our headlong rush into the future, I feel strongly that we need to take the time to reflect and allow ourselves to be transformed by these questions, just as humans have always done throughout all of known history.</p>
 
     <h2>About This Site</h2>
 
