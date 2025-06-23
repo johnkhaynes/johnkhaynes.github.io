@@ -7,9 +7,9 @@ title: Home
   <div class="main-content">
     <h1>Digital Postcards from the Edge</h1>
 
-    <p>Welcome to my little corner of the web. As we approach the coming collective transformation (aka The Singularity), it feels appropriate to record some of my thoughts, feelings, and observations as all of this unfolds.</p>
+    <p>Welcome to my little corner of the web. As we approach the coming collective transformation (aka The Singularity), I feel compelled to record some of my thoughts, feelings, and observations as all of this unfolds.</p>
 
-    <p>Here's a few of the latest thoughts:</p>
+    <p>Here's a few of the latest:</p>
 
     <h2>Latest Posts</h2>
 

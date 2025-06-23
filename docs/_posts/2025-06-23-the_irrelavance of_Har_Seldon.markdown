@@ -2,7 +2,7 @@
 layout: post
 title:  The Irrelvance of Hari Seldon
 date:   2025-06-23 08:23:57 -0700
-categories: scifi singularity
+categories: scifi agi asi singularity
 ---
 
 David Sparks, aka [MacSparky](https://www.macsparky.com), recently sent out this email to his mailing list:
